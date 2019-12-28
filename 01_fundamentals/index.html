@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	<div id="app">
+      <h2> {{ message }}</h2>
+	  <ul>
+	    <li v-for="todo in todos">
+	      {{ todo.text }} - 
+         <span v-if= "todo.quantity > 0 ">{{ todo.quantity }}</span>
+         <span v-if= "todo.quantity === 0 ">Anything jet!</span>
+	    </li>
+	  </ul>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
